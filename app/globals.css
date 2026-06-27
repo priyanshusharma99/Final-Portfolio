@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Fonts */
+  --font-display: "Archivo Black", sans-serif;
+  --font-sans: "Inter Tight", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Backgrounds */
+  --color-background: #030303;
+  --color-surface: #070707;
+  --color-surface-raised: #0b0b0b;
+  --color-surface-muted: #111111;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Borders */
+  --color-border: #1c1c1c;
+  --color-border-strong: #303030;
+  --color-border-faint: #111111;
+
+  /* Text */
+  --color-text-primary: #f7f7f2;
+  --color-text-secondary: #c9c9c3;
+  --color-text-muted: #747474;
+  --color-text-faint: #4f4f4f;
+  --color-text-inverse: #030303;
+
+  /* Accent */
+  --color-accent: #ff3b30;
+  --color-accent-dark: #d92820;
+  --color-accent-muted: rgba(255, 59, 48, 0.12);
+  --color-accent-foreground: #030303;
+
+  /* Status */
+  --color-success: #f7f7f2;
+  --color-warning: #ff3b30;
+  --color-error: #ff3b30;
+
+  /* Radius — square-edged editorial design, no rounding */
+  --radius-none: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  /* Layout spacing */
+  --spacing-page-x: 62px;
+  --spacing-section-y: 96px;
+  --spacing-header-h: 72px;
+
+  /* Animations */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
+/* ── Base resets ── */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-background);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+/* ── Display typography utilities ── */
+
+.display-fill {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.86;
+}
+
+.display-outline {
+  font-family: var(--font-display);
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-accent);
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -0.04em;
+  line-height: 0.86;
+}
+
+.display-outline-gray {
+  font-family: var(--font-display);
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-text-faint);
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1;
 }

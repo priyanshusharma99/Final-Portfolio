@@ -1,0 +1,62 @@
+# Progress Tracker
+
+Update this file after every completed feature. Any AI agent reading this should immediately know what is done, what is in progress, and what is next.
+
+---
+
+## Current Status
+
+**Phase:** Phase 4 — Content System
+**Last completed:** 11 Footer
+**Next:** 12 Content Model
+
+---
+
+## Progress
+
+### Phase 1 — Screenshot-Matched Foundation
+
+- [x] 01 Project Setup
+- [x] 02 Site Header
+- [x] 03 Hero + Stats
+- [x] 04 About Section
+
+### Phase 2 — Core Portfolio Sections
+
+- [x] 05 Toolkit / Skills
+- [x] 06 Selected Work
+- [x] 07 Trajectory / Experience
+- [x] 08 Kind Words / Testimonials
+
+### Phase 3 — Writing, Contact, Footer
+
+- [x] 09 Journal
+- [x] 10 Contact
+- [x] 11 Footer
+
+### Phase 4 — Content System
+
+- [ ] 12 Content Model
+- [ ] 13 Placeholder Checklist
+- [ ] 14 SEO and Metadata
+
+### Phase 5 — Optional AI/Admin/Deploy
+
+- [ ] 15 AI Content Assistant
+- [ ] 16 Responsive QA
+- [ ] 17 Deployment
+
+---
+
+## Decisions Made During Build
+
+- **Typography & Spacing Scale Refinement (June 2026):** Scaled down oversized headers, section titles, and paragraphs (from `text-[18px]` body copy to `text-[13px]/[14px]` monospace) to improve negative space and density matching the original screenshots.
+- **Header Height & Buttons (June 2026):** Reduced navigation bar height variable to `72px` and set navigation and call-to-actions to use clean, compact `font-sans` styled buttons with refined tracking (`tracking-[0.2em]`).
+
+---
+
+## Notes
+
+- Checked type safety (`npx tsc --noEmit`) and verified linting rules (`npm run lint`).
+- Confirmed desktop and mobile menu panel adjustments are completely matched to the reference designs.
+- Integrated **Lenis smooth scroll** (`lenis/react`) into RootLayout to enable ultra-premium inertial/momentum scrolling. Added typescript ambient definitions in `types/lenis.d.ts` for clean workspace compilation.

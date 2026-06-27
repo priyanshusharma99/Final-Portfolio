@@ -1,0 +1,26 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/priyanshu/Downloads/Priyanshu's Space/Personal Portfolio/priyanshu-portfolio/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install lenis
+7 verbose argv "install" "lenis" "--cache" ".npm-cache" "--no-audit" "--no-fund" "--userconfig" ".npmrc"
+8 verbose logfile logs-max:10 dir:/Users/priyanshu/Downloads/Priyanshu's Space/Personal Portfolio/priyanshu-portfolio/.npm-cache/_logs/2026-06-27T11_33_17_627Z-
+9 verbose logfile /Users/priyanshu/Downloads/Priyanshu's Space/Personal Portfolio/priyanshu-portfolio/.npm-cache/_logs/2026-06-27T11_33_17_627Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+12 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+13 silly idealTree buildDeps
+14 silly fetch manifest lenis@*
+15 silly packumentCache full:https://registry.npmjs.org/lenis cache-miss
+16 http fetch GET https://registry.npmjs.org/lenis attempt 1 failed with ENOTFOUND
+17 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/lenis attempt 2 failed with ENOTFOUND
+19 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ENOTFOUND
+20 http fetch GET https://registry.npmjs.org/lenis attempt 3 failed with ENOTFOUND
+21 silly placeDep ROOT lenis@ OK for: priyanshu-portfolio@0.1.0 want: *
+22 silly fetch manifest @img/sharp-linux-arm64@0.34.5
+23 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm64 cache-miss
+24 http fetch GET https://registry.npmjs.org/@img%2fsharp-linux-arm64 attempt 1 failed with ENOTFOUND
+25 http fetch GET https://registry.npmjs.org/@img%2fsharp-linux-arm64 attempt 2 failed with ENOTFOUND
