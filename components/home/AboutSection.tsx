@@ -50,6 +50,7 @@ export function AboutSection() {
             className="object-cover grayscale contrast-120 brightness-95"
             sizes="(max-width: 1024px) 100vw, 50vw"
             priority
+            suppressHydrationWarning
           />
         </div>
 

@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   title: "Priyanshu | Full Stack Developer",
   description:
     "Portfolio of Priyanshu — a developer building web apps and AI tools.",
+  icons: {
+    icon: "/icon.jpg",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

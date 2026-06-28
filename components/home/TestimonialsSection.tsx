@@ -50,7 +50,7 @@ export function TestimonialsSection() {
           const isActive = index === activeIndex;
           return (
             <div
-              key={t.author}
+              key={`${t.author}-${index}`}
               onClick={() => setActiveIndex(index)}
               className={`flex flex-col justify-between aspect-square p-7 border transition-all duration-300 cursor-pointer select-none max-md:p-6 max-md:aspect-auto max-md:min-h-[220px] ${
                 isActive
