@@ -2,24 +2,24 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    slug: "lumen-analytics",
-    title: "Lumen Analytics",
-    tagline: "Rebuilt a 14-year-old BI tool into a real-time analytics platform.",
-    summary: "Rebuilt a 14-year-old BI tool into a real-time analytics platform. Cut query latency by 78% and shipped a new design system that lifted activation 31%.",
-    category: "SAAS · PRODUCT ENGINEERING · 2025",
+    slug: "voke",
+    title: "Voke",
+    tagline: "A fully personalised AI mock interview platform",
+    summary: "A fully personalised AI mock interview platform to help students prepare for interviews.",
+    category: "SAAS · Artificial Intelligence · 2026",
     featured: true,
     status: "Live",
-    year: "2025",
-    role: "Lead Product Engineer",
-    stack: ["Next.js", "DuckDB", "Stripe"],
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", // Dark dashboard analytics screen
-    liveUrl: "#",
+    year: "2026",
+    role: "Full Stack Developer",
+    stack: ["React", "AI Models", "MongoDB"],
+    imageUrl: "/images/voke.png", // Dark dashboard analytics screen
+    liveUrl: "https://tryvoke.in",
     repoUrl: "#",
-    problem: "A legacy business intelligence suite suffered from multi-second load times and high churn due to its dated design system.",
-    solution: "We re-architected the database queries with DuckDB, created an edge-cached Next.js application, and implemented a strict monospace-driven component library.",
-    features: ["Real-time database integration", "Monospace design system", "Edge query caching"],
+    problem: "Interviews are a crucial part of the recruitment process, but most students and professionals lack the resources to effectively prepare for them. Traditional interview preparation methods are often time-consuming, expensive, and fail to provide personalized feedback.",
+    solution: "We built a personalized AI mock interview platform that helps users prepare for interviews by providing tailored feedback and guidance.",
+    features: ["Real-time database integration", "Personalised feedback", "Edge query caching"],
     technicalDetails: ["DuckDB integration", "Next.js App Router query caching"],
-    impact: ["78% latency reduction", "31% activation improvement"],
+    impact: ["100+ users in 2 month", "30+ positive reviews"],
     lessons: ["Incremental migrations of 14-year databases require extensive query audits."]
   },
   {

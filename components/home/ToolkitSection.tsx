@@ -24,8 +24,7 @@ export function ToolkitSection() {
           </div>
           <div className="flex items-end font-mono text-[13px] lg:text-[14px] leading-[1.6] text-text-muted">
             <p className="max-w-[420px]">
-              I&apos;m stack-agnostic but opinionated. Below is what I default to
-              for shipping fast without painting the team into a corner.
+              I'm stack-agnostic but I know what works. I pick tools that let me move fast, stay flexible, and not break everything when the scope changes. Here's what I default to.
             </p>
           </div>
         </div>

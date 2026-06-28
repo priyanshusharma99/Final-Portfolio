@@ -23,7 +23,7 @@ export function SiteHeader() {
       <Link href="/" className="flex items-center gap-2 shrink-0">
         <span className="block h-2 w-2 bg-accent" />
         <span className="font-display text-[16px] lg:text-[18px] uppercase tracking-tight text-text-primary">
-          Alex Morgan
+          Priyanshu Sharma
         </span>
       </Link>
 

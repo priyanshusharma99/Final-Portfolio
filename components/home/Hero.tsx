@@ -42,10 +42,10 @@ function StatItem({ value, label }: StatItemProps) {
 }
 
 const stats: StatItemProps[] = [
-  { value: "06", label: "Years Shipping" },
-  { value: "47", label: "Projects Launched" },
-  { value: "11", label: "Open-Source Repos" },
-  { value: "2.4M", label: "Users Impacted" },
+  { value: "02", label: "Year Building" },
+  { value: "12+", label: "Projects Launched" },
+  { value: "-", label: "Open-Source Repos" },
+  { value: "100+", label: "Users Impacted" },
 ];
 
 export function Hero() {
@@ -60,10 +60,10 @@ export function Hero() {
           Portfolio / 2026
         </span>
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
-          [01] — Based in Brooklyn, NY
+          [01] — Based in Uttar Pradesh, India
         </span>
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
-          [02] — Available for Freelance / Q2 2026
+          [02] — Available for Freelance / Q3 2026
         </span>
         <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted max-lg:hidden">
           V 26.01 / Dec
@@ -100,9 +100,11 @@ export function Hero() {
           {/* Right — copy + CTAs */}
           <div className="flex flex-col justify-end gap-6 pb-2 lg:pb-8">
             <p className="font-mono text-[13px] leading-[1.6] text-text-muted max-w-[340px]">
-              I design and engineer interfaces at the intersection of brand and
-              product. Six years shipping with fast-moving teams — from
-              seed-stage startups to public companies.
+              I design and build interfaces — not one or the other.
+
+Started freelancing, now founding Voke — an AI-powered mock interview platform helping students and early-career folks actually prepare, perform, and succeed.
+
+
             </p>
             <div className="flex flex-col gap-2.5">
               <HeroButton

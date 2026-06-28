@@ -7,12 +7,22 @@ type Props = {
   index: number;
 };
 
+const formatUrl = (url?: string) => {
+  if (!url || url === "#") return "#";
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  return `https://${url}`;
+};
+
 export function ProjectTile({ project, index }: Props) {
   const indexStr = (index + 1).toString().padStart(2, "0");
+  const href = formatUrl(project.liveUrl);
+  const isExternal = href !== "#";
 
   return (
     <a
-      href={`/work/${project.slug}`}
+      href={href}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
       className="group flex flex-col gap-5 w-full text-left cursor-pointer"
     >
       {/* ── Tile Header (Index & Arrow) ── */}

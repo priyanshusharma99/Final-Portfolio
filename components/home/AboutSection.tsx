@@ -26,7 +26,7 @@ export function AboutSection() {
               With the Eye
             </span>
             <span className="display-outline block text-[clamp(2.2rem,5vw,4.5rem)]">
-              Of a Designer.
+              Of AI.
             </span>
           </h2>
         </div>
@@ -40,12 +40,12 @@ export function AboutSection() {
       </div>
 
       {/* ── Bottom Grid: Grayscale Portrait + Info Grid ── */}
-      <div className="mt-16 border border-border grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] overflow-hidden">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-stretch">
         {/* Left: Grayscale portrait */}
-        <div className="relative aspect-[4/5] w-full min-h-[350px] lg:h-full lg:min-h-[500px] border-r border-border max-lg:border-r-0 max-lg:border-b">
+        <div className="relative aspect-[4/5] w-full min-h-[350px] lg:h-full lg:min-h-[500px]">
           <Image
             src={avatarUrl}
-            alt="Alex Morgan Portrait"
+            alt="Priyanshu Sharma Portrait"
             fill
             className="object-cover grayscale contrast-120 brightness-95"
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -54,63 +54,63 @@ export function AboutSection() {
         </div>
 
         {/* Right: 2x3 info grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 lg:gap-x-12 lg:gap-y-16 py-4">
           {/* Item 1: NOW */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px]">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               NOW
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.now}
             </h3>
           </div>
 
           {/* Item 2: FOCUS */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px] border-t border-border md:border-t-0 md:border-l">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               FOCUS
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.focus}
             </h3>
           </div>
 
           {/* Item 3: TEAM SIZE */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px] border-t border-border">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               TEAM SIZE
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.teamSize}
             </h3>
           </div>
 
           {/* Item 4: STACK OF CHOICE */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px] border-t border-border md:border-l">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               STACK OF CHOICE
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.stackOfChoice}
             </h3>
           </div>
 
           {/* Item 5: CURRENTLY READING */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px] border-t border-border">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               CURRENTLY READING
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.currentlyReading}
             </h3>
           </div>
 
           {/* Item 6: CURRENTLY BUILDING */}
-          <div className="p-6 flex flex-col justify-between min-h-[140px] border-t border-border md:border-l">
+          <div className="flex flex-col gap-1.5 justify-start">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               CURRENTLY BUILDING
             </span>
-            <h3 className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary leading-tight mt-4">
+            <h3 className="font-sans text-[18px] lg:text-[20px] font-bold tracking-[-0.01em] text-text-primary leading-tight">
               {infoGrid.currentlyBuilding}
             </h3>
           </div>
