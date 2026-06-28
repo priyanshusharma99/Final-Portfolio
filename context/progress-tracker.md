@@ -56,6 +56,10 @@ Update this file after every completed feature. Any AI agent reading this should
 - **Direct Project Link Redirection (June 2026):** Linked ProjectTile components directly to their respective `liveUrl` rather than dynamic `/work/[slug]` routes to prevent 404 errors in static single-page portfolio mode. Formatted domain-only input URLs (e.g. `tryvoke.in`) to prepend `https://` automatically.
 - **Hydration Warning Suppression (June 2026):** Added `suppressHydrationWarning` to the root `<html>` tag in `app/layout.tsx` to prevent hydration mismatches caused by client-side browser extensions (e.g., dark mode enhancers like "Noir" or translation tools) injecting elements or stylesheets before hydration.
 - **Unique Mapping Keys in Timeline (June 2026):** Updated the experience timeline list renderer key in `TrajectorySection.tsx` to use a combination of `company` and `index` (`key={\`\${item.company}-\${index}\`}`) rather than just `company` to resolve duplication and layout rendering bugs caused by non-unique keys when multiple items share the same value (e.g., "None").
+- **Favicon Customization (June 2026):** Replaced the default Next.js `favicon.ico` with a custom `icon.jpg` using Next.js App Router's automated metadata icon generation.
+- **Unique Mapping Keys in Testimonials (June 2026):** Updated the testimonials grid mapping key in `TestimonialsSection.tsx` to combine author and index to avoid React duplication warnings caused by duplicate authors ("None").
+- **Image Tag Hydration Warning Suppression (June 2026):** Added `suppressHydrationWarning` to the `Image` components in `AboutSection.tsx` and `ProjectTile.tsx` to handle browser dark mode plugins (e.g. Noir) modifying image style attributes dynamically.
+- **Vercel Semver Compatibility (June 2026):** Updated shorthand single-digit devDependencies versions (e.g., `^4`, `^9`) to fully-qualified semantic versions (e.g., `^4.0.0`, `^9.0.0`) in `package.json` to resolve `Invalid Version` dependency installation failures during Vercel builds.
 
 ---
 
