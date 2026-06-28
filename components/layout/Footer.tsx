@@ -12,7 +12,7 @@ export function Footer() {
           </p>
           <h2>
             <span className="display-fill block text-[clamp(2rem,4vw,3.5rem)] leading-none text-text-primary">
-              Alex Morgan<span className="text-accent">.</span>
+              Priyanshu Sharma<span className="text-accent">.</span>
             </span>
             <span className="display-outline-gray block text-[clamp(1.8rem,3.8vw,3.2rem)] leading-tight mt-2.5">
               Full-Stack Developer
@@ -82,14 +82,14 @@ export function Footer() {
       {/* ── Giant Outlined Graphic Text ── */}
       <div className="mt-16 select-none overflow-hidden max-md:mt-12">
         <span className="display-outline-gray block text-center text-[clamp(3.5rem,10vw,12rem)] font-black uppercase leading-none tracking-tight whitespace-nowrap opacity-60">
-          Alex ✕ 2026
+          PS ✕ 2026
         </span>
       </div>
 
       {/* ── Bottom Copyright Row ── */}
       <div className="mt-10 pt-6 border-t border-border/40 flex flex-col md:flex-row md:items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.15em] text-text-muted max-md:mt-8">
-        <div>&copy; 2026 Alex Morgan. All Rights Reserved.</div>
-        <div>Designed &amp; Engineered in Brooklyn, NY.</div>
+        <div>&copy; 2026 Priyanshu Sharma. All Rights Reserved.</div>
+        <div>Designed &amp; Engineered in India.</div>
       </div>
     </footer>
   );

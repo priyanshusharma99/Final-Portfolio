@@ -55,6 +55,7 @@ Update this file after every completed feature. Any AI agent reading this should
 - **About Info Grid Refinement (June 2026):** Removed all unnecessary borders inside and around the 2x3 grid and portrait image. Changed values to use `font-sans` (Inter Tight) instead of `font-display` (Archivo Black) and removed the grid stretching height, aligning elements closely to match the original editorial look.
 - **Direct Project Link Redirection (June 2026):** Linked ProjectTile components directly to their respective `liveUrl` rather than dynamic `/work/[slug]` routes to prevent 404 errors in static single-page portfolio mode. Formatted domain-only input URLs (e.g. `tryvoke.in`) to prepend `https://` automatically.
 - **Hydration Warning Suppression (June 2026):** Added `suppressHydrationWarning` to the root `<html>` tag in `app/layout.tsx` to prevent hydration mismatches caused by client-side browser extensions (e.g., dark mode enhancers like "Noir" or translation tools) injecting elements or stylesheets before hydration.
+- **Unique Mapping Keys in Timeline (June 2026):** Updated the experience timeline list renderer key in `TrajectorySection.tsx` to use a combination of `company` and `index` (`key={\`\${item.company}-\${index}\`}`) rather than just `company` to resolve duplication and layout rendering bugs caused by non-unique keys when multiple items share the same value (e.g., "None").
 
 ---
 

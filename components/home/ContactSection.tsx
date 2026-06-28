@@ -31,10 +31,10 @@ export function ContactSection() {
               Email
             </span>
             <a
-              href="mailto:hello@alexmorgan.dev"
+              href="mailto:priyanshu.s25358@nst.rishihood.edu.in"
               className="font-display text-[18px] lg:text-[20px] tracking-[-0.03em] text-text-primary hover:text-accent transition-colors break-all"
             >
-              hello@alexmorgan.dev
+              priyanshu.s25358@nst.rishihood.edu.in
             </a>
           </div>
 
@@ -55,8 +55,8 @@ export function ContactSection() {
             </span>
             <ul className="flex flex-col gap-3 font-mono text-[13px] text-text-muted">
               {[
-                { name: "Github", url: "https://github.com" },
-                { name: "Linkedin", url: "https://linkedin.com" },
+                { name: "Github", url: "https://github.com/priyanshusharma99" },
+                { name: "Linkedin", url: "https://www.linkedin.com/in/priyanshu-sharma-7356b0380/" },
                 { name: "Twitter", url: "https://twitter.com" },
                 { name: "Dribbble", url: "https://dribbble.com" },
               ].map((social) => (

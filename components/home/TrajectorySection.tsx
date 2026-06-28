@@ -15,7 +15,7 @@ export function TrajectorySection() {
           <div>
             <h2>
               <span className="display-fill block text-[clamp(2.5rem,5.5vw,5rem)]">
-                Six Years.
+                Two Years.
               </span>
               <span className="display-fill block text-[clamp(2.5rem,5.5vw,5rem)]">
                 Four Teams.
@@ -42,7 +42,7 @@ export function TrajectorySection() {
 
           return (
             <div
-              key={item.company}
+              key={`${item.company}-${index}`}
               className={`${
                 item.current
                   ? "bg-surface border-t border-b border-border"

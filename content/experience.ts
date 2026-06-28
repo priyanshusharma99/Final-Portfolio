@@ -3,43 +3,32 @@ import type { ExperienceItem } from "@/types";
 export const experienceItems: ExperienceItem[] = [
   {
     dateRange: "2024 — NOW",
-    company: "Independent",
+    company: "Elevora",
     location: "REMOTE",
-    role: "Principal Engineer & Design Partner",
+    role: "Full stack developer and AI Engineer",
     bullets: [
-      "Selected client engagements with seed-Series-B teams.",
-      "Built 0→1 products for two YC W25 companies."
+      "Working with clients to build AI-powered products.",
+      "Working on 0→1 products"
     ],
     current: true
   },
   {
-    dateRange: "2022 — 2024",
-    company: "Linear",
-    location: "REMOTE",
-    role: "Senior Product Engineer",
+    dateRange: "2023 — 2024",
+    company: "None",
+    location: "None",
+    role: "Student",
     bullets: [
-      "Led web platform performance initiative; cut p95 to 180ms.",
-      "Designed and built the Insights module from scratch."
+      "Learned a lot."
     ]
   },
   {
-    dateRange: "2020 — 2022",
-    company: "Stripe",
-    location: "SAN FRANCISCO",
-    role: "Product Engineer, Atlas",
+    dateRange: "2022 — 2023",
+    company: "None",
+    location: "None",
+    role: "Student",
     bullets: [
-      "Owned the founder onboarding surface end-to-end.",
-      "Shipped 4 new countries with localized payments + tax."
-    ]
-  },
-  {
-    dateRange: "2018 — 2020",
-    company: "Square",
-    location: "NEW YORK",
-    role: "Software Engineer",
-    bullets: [
-      "Worked on POS hardware-software handshake protocols.",
-      "Migrated legacy Ruby services to Go (12 services)."
+      "Did the most important course of my life.",
+      "Learned a lot."
     ]
   }
 ];
