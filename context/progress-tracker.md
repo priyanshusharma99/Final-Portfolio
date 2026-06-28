@@ -60,6 +60,7 @@ Update this file after every completed feature. Any AI agent reading this should
 - **Unique Mapping Keys in Testimonials (June 2026):** Updated the testimonials grid mapping key in `TestimonialsSection.tsx` to combine author and index to avoid React duplication warnings caused by duplicate authors ("None").
 - **Image Tag Hydration Warning Suppression (June 2026):** Added `suppressHydrationWarning` to the `Image` components in `AboutSection.tsx` and `ProjectTile.tsx` to handle browser dark mode plugins (e.g. Noir) modifying image style attributes dynamically.
 - **Vercel Semver Compatibility (June 2026):** Updated shorthand single-digit devDependencies versions (e.g., `^4`, `^9`) to fully-qualified semantic versions (e.g., `^4.0.0`, `^9.0.0`) in `package.json` to resolve `Invalid Version` dependency installation failures during Vercel builds.
+- **Corrupted Optional Dependency in package-lock.json (June 2026):** Resolved an invalid version parsing crash (`TypeError: Invalid Version:`) inside Arborist during Vercel's `npm install` phase by removing the corrupted placeholder entry for `node_modules/sharp/node_modules/@img/sharp-linux-arm64` and regenerating the correct hoisted dependency references in `package-lock.json`.
 
 ---
 
